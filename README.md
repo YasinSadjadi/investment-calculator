@@ -1,105 +1,91 @@
-# Investment Calculator (Angular)
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" alt="Angular" width="38" height="38" align="right" style="margin-right:8px"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" width="38" height="38" align="right" style="margin-right:8px"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML" width="38" height="38" align="right" style="margin-right:8px"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" width="38" height="38" align="right" style="margin-right:8px"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="tailwindcss" width="38" height="38" align="right" style="margin-right:8px"/>
 
-Small Angular app that calculates investment growth. Built as part of an Angular course — includes a simple UI, input model, result component, and a service to manage results.
+# Investment Calculator ✨
+
+**A sleek, modern investment growth calculator built with Angular**  
+Calculate compound interest, track yearly results, and visualize your financial future — all in a clean, component-based Angular application.
+
+Part of an Angular mastery course — perfect for learning services, component communication, and TypeScript modeling.
+
+<br/>
 
 ## Features
 
-- Input form for investment parameters (amount, duration, interest, etc.)
-- Calculation of periodic/yearly results
-- Result list and simple service for storing/displaying results
-- Clean, component-based structure
+| Feature                        | Description                                              |
+|--------------------------------|----------------------------------------------------------|
+| Form Input                     | Initial amount, duration, expected return %, compounding |
+| Yearly Breakdown               | Detailed year-by-year investment growth table            |
+| Results Service                | Stores & manages calculation history                     |
+| Responsive & Clean UI          | Beautiful, mobile-friendly design                        |
+| Fully Typed (TypeScript)       | Strong typing with interfaces & models                   |
 
-## Tech
+<br/>
 
-- Angular (vX — check package.json)
-- TypeScript
-- HTML / CSS
-- Node.js / npm for tooling
+## Tech Stack
 
-## Project structure (important files)
+<div align="center">
 
-- src/
-  - index.html
-  - main.ts
-  - styles.css
-  - app/
-    - app.component.ts / app.component.html
-    - header/
-      - header.component.ts / header.component.html / header.component.css
-    - investment/
-      - investment-calculator.component.ts / .html / .css
-      - investmentData.model.ts
-      - investment-result/
-        - investment-result.component.ts / .html / .css
-        - investment-result.model.ts
-        - investment-results.service.ts
+| Technology     | Version |
+|----------------|---------|
+| Angular        | v18+ (see `package.json`) |
+| TypeScript     | Latest  |
+| HTML5          | Semantic markup |
+| CSS3           | Flexbox & modern styling |
+| Node.js + npm  | Tooling |
 
-## Prerequisites
+</div>
 
-- Node.js (recommended LTS)
-- npm (comes with Node)
-- Angular CLI (optional, for local serve/build): npm install -g @angular/cli
+<br/>
 
-## Setup (Windows)
+## Project Structure (Key Files)
+src/app/
+├── app.component.ts
+├── header/
+│   └── header.component.ts/html/css
+├── investment/
+│   ├── investment-calculator.component.ts/html/css
+│   ├── investmentData.model.ts
+│   └── investment-result/
+│       ├── investment-result.component.ts/html/css
+│       ├── investment-result.model.ts
+│       └── investment-results.service.ts
+text<br/>
 
-Open a terminal (PowerShell or cmd) at the project root:
+## Quick Start (Windows / macOS / Linux)
 
-1. Install dependencies
-   ```
-   npm install
-   ```
-2. Run development server
-   ```
-   ng serve --open
-   ```
-   or if Angular CLI is not global:
-   ```
-   npx ng serve --open
-   ```
+```bash
+# 1. Clone or download the project
+git clone <your-repo-url>
+cd investment-calculator
 
-The app will open at http://localhost:4200 by default.
+# 2. Install dependencies
+npm install
 
-## Build for production
+# 3. Launch dev server (opens browser automatically)
+ng serve --open
+npx ng serve --open
+App runs at → http://localhost:4200
 
-```
-ng build --configuration production
-```
 
-or
-
-```
+Build for Production
+Bashng build --configuration production
 npx ng build --configuration production
+Output → /dist/
+
+
+Ideas to Level Up
+
+Add Reactive Forms with validation
+Add chart visualization (Chart.js or NGX-Charts)
+Persist results using localStorage or a mock backend
+Add unit tests with Jasmine/Karma or Jest
+Style with Tailwind CSS or Angular Material
+
+Made with ❤️ and a lot of TypeScript
+https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/assets/angular.svg
+
 ```
-
-Built files will be in the `dist/` folder.
-
-## Tests / Lint
-
-This project template may not include tests. If you add Karma/Jasmine or Jest, run:
-
-```
-ng test
-```
-
-and for linting (if configured):
-
-```
-ng lint
-```
-
-## Where to change things
-
-- UI / layout: edit component HTML/CSS in `src/app/**`
-- Calculation logic: `src/app/investment/investment-calculator.component.ts`
-- Result models & service: `src/app/investment/investment-result/`
-
-## Extending
-
-- Add form validation with Angular Reactive Forms
-- Persist results to localStorage or backend by enhancing `investment-results.service.ts`
-- Add unit tests for components and services
-
-## Troubleshooting
-
-- If `ng` is not recognized, use `npx ng ...` or install Angular CLI globally.
-- Check Node/npm versions if install fails.
