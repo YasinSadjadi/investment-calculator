@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+header {
+  @apply w-full flex flex-col items-center justify-center gap-5 my-10;
+}
+
+img {
+  @apply w-32;
+}
+
+h1 {
+  @apply text-3xl;
+}

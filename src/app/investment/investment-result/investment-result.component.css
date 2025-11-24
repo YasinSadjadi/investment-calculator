@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+table {
+  @apply max-w-250 my-auto mx-8 p-4 table-fixed border-spacing-4 text-right;
+}
+
+thead {
+  @apply text-[0.8rem] text-[#83e6c0] text-right;
+}
+
+tbody {
+  font-family: "Roboto Condensed", sans-serif;
+  @apply text-[0.85rem] text-[#c2e9e0];
+}

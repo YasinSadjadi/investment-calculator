@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+.container {
+  @apply mx-auto  max-w-150;
+}
+
+form {
+  @apply bg-linear-180 from-[#307e6c] to-[#2b996d] rounded-sm w-full 
+  p-5 pb-6;
+}
+
+.input-row {
+  @apply flex flex-row gap-0 mx-10 justify-around;
+}
+
+.input-col {
+  @apply flex flex-col gap-6;
+}
+
+button {
+  @apply bg-[#83e6c0] border border-[#76c0ae] rounded-sm text-[#1a1f1d]
+  p-2 text-[1rem] transform duration-200 cursor-pointer uppercase font-semibold
+  hover:bg-[#aaf1d6];
+}
+
+app-investment-result {
+  @apply p-0;
+}
+
+p {
+  @apply text-center;
+}
+
+.input-group {
+  @apply flex flex-col items-start gap-1;
+}
+
+.input-group input {
+  @apply bg-transparent border border-[#76c0ae] w-full
+  transition duration-200
+  text-[#c2e9e0] outline-none
+  active:border-green-100 hover:border-green-100
+  focus:ring-blue-500 focus:ring-1
+  rounded-sm py-1 px-2;
+}
+
+.input-group label {
+  font-family: "Roboto Condensed", sans-serif;
+  @apply uppercase text-[0.6rem] font-medium;
+}

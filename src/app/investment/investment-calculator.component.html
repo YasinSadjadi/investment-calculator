@@ -1,0 +1,55 @@
+<div class="container">
+  <form class="input-col">
+    <div class="input-row">
+      <div class="input-group">
+        <label for="initial-Investemnt">initial Investemnt</label>
+        <input
+          type="number"
+          id="initial-Investemnt"
+          name="initial-Investemnt"
+          [(ngModel)]="enteredInitialInvestment"
+        />
+      </div>
+
+      <div class="input-group">
+        <label for="annual-investment">Annual Investemnt</label>
+        <input
+          type="number"
+          id="annual-investment"
+          name="annual-investment"
+          [(ngModel)]="enteredAnnualInvestment"
+        />
+      </div>
+    </div>
+
+    <div class="input-row">
+      <div class="input-group">
+        <label for="expected-return">Expected Return</label>
+        <input
+          type="number"
+          id="expected-return"
+          name="expected-return"
+          [(ngModel)]="enteredExpectedReturn"
+        />
+      </div>
+
+      <div class="input-group">
+        <label for="duration">Duration</label>
+        <input
+          type="number"
+          id="duration"
+          name="duration"
+          [(ngModel)]="enteredDuration"
+        />
+      </div>
+    </div>
+
+    <button type="button" (click)="onSubmit()">Calculate</button>
+  </form>
+
+  @if (this.show) {
+  <app-investment-result [investmentData]="investmentData()" />
+  } @else {
+  <p>Please enter some values and press "Calculate"</p>
+  }
+</div>
