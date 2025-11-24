@@ -1,27 +1,109 @@
-# EssentialsPractice
+# Investment Calculator (Angular)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.0-next.2.
+Small Angular app that calculates investment growth. Built as part of an Angular course — includes a simple UI, input model, result component, and a service to manage results.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Input form for investment parameters (amount, duration, interest, etc.)
+- Calculation of periodic/yearly results
+- Result list and simple service for storing/displaying results
+- Clean, component-based structure
 
-## Code scaffolding
+## Tech
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Angular (vX — check package.json)
+- TypeScript
+- HTML / CSS
+- Node.js / npm for tooling
 
-## Build
+## Project structure (important files)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- src/
+  - index.html
+  - main.ts
+  - styles.css
+  - app/
+    - app.component.ts / app.component.html
+    - header/
+      - header.component.ts / header.component.html / header.component.css
+    - investment/
+      - investment-calculator.component.ts / .html / .css
+      - investmentData.model.ts
+      - investment-result/
+        - investment-result.component.ts / .html / .css
+        - investment-result.model.ts
+        - investment-results.service.ts
 
-## Running unit tests
+## Prerequisites
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Node.js (recommended LTS)
+- npm (comes with Node)
+- Angular CLI (optional, for local serve/build): npm install -g @angular/cli
 
-## Running end-to-end tests
+## Setup (Windows)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Open a terminal (PowerShell or cmd) at the project root:
 
-## Further help
+1. Install dependencies
+   ```
+   npm install
+   ```
+2. Run development server
+   ```
+   ng serve --open
+   ```
+   or if Angular CLI is not global:
+   ```
+   npx ng serve --open
+   ```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+The app will open at http://localhost:4200 by default.
+
+## Build for production
+
+```
+ng build --configuration production
+```
+
+or
+
+```
+npx ng build --configuration production
+```
+
+Built files will be in the `dist/` folder.
+
+## Tests / Lint
+
+This project template may not include tests. If you add Karma/Jasmine or Jest, run:
+
+```
+ng test
+```
+
+and for linting (if configured):
+
+```
+ng lint
+```
+
+## Where to change things
+
+- UI / layout: edit component HTML/CSS in `src/app/**`
+- Calculation logic: `src/app/investment/investment-calculator.component.ts`
+- Result models & service: `src/app/investment/investment-result/`
+
+## Extending
+
+- Add form validation with Angular Reactive Forms
+- Persist results to localStorage or backend by enhancing `investment-results.service.ts`
+- Add unit tests for components and services
+
+## Troubleshooting
+
+- If `ng` is not recognized, use `npx ng ...` or install Angular CLI globally.
+- Check Node/npm versions if install fails.
+
+## License
+
+Add a license file if needed (e.g., MIT).
