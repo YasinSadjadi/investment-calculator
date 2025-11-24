@@ -86,6 +86,4 @@ Add unit tests with Jasmine/Karma or Jest
 Style with Tailwind CSS or Angular Material
 
 Made with ❤️ and a lot of TypeScript
-https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/assets/angular.svg
-
 ```
