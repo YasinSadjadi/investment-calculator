@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 .container {
-  @apply mx-auto  max-w-150;
+  @apply mx-auto  max-w-120;
 }
 
 form {
-  @apply bg-linear-180 from-[#307e6c] to-[#2b996d] rounded-sm w-full 
+  @apply bg-linear-180 from-[#307e6c] to-[#2b996d] rounded-sm 
   p-5 pb-6;
 }
 
 .input-row {
-  @apply flex flex-row gap-0 mx-10 justify-around;
+  @apply flex flex-row gap-6 mx-4;
 }
 
 .input-col {
@@ -28,7 +28,7 @@ app-investment-result {
 }
 
 p {
-  @apply text-center;
+  @apply text-center mt-7;
 }
 
 .input-group {

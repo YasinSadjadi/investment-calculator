@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 table {
-  @apply max-w-250 my-auto mx-8 p-4 table-fixed border-spacing-4 text-right;
+  @apply max-w-200 my-3 mx-auto p-4 table-fixed text-right border-separate border-spacing-x-4 border-spacing-y-2;
 }
 
 thead {
-  @apply text-[0.8rem] text-[#83e6c0] text-right;
+  @apply text-[0.7rem] text-[#83e6c0];
 }
 
 tbody {

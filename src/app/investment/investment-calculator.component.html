@@ -46,10 +46,10 @@
 
     <button type="button" (click)="onSubmit()">Calculate</button>
   </form>
-
-  @if (this.show) {
-  <app-investment-result [investmentData]="investmentData()" />
-  } @else {
-  <p>Please enter some values and press "Calculate"</p>
-  }
 </div>
+
+@if (this.show) {
+<app-investment-result [investmentData]="investmentData()" />
+} @else {
+<p>Please enter some values and press "Calculate"</p>
+}
