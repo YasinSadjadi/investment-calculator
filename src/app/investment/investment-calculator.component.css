@@ -6,6 +6,7 @@
 
 form {
   @apply bg-linear-180 from-[#307e6c] to-[#2b996d] rounded-sm 
+  shadow-sm shadow-green-800
   p-5 pb-6;
 }
 
@@ -18,9 +19,10 @@ form {
 }
 
 button {
+  font-family: "Roboto Condensed", sans-serif;
   @apply bg-[#83e6c0] border border-[#76c0ae] rounded-sm text-[#1a1f1d]
   p-2 text-[1rem] transform duration-200 cursor-pointer uppercase font-semibold
-  hover:bg-[#aaf1d6];
+  hover:bg-[#aaf1d6] hover:shadow-xs hover:shadow-[#aaf1d6];
 }
 
 app-investment-result {
@@ -40,11 +42,11 @@ p {
   transition duration-200
   text-[#c2e9e0] outline-none
   active:border-green-100 hover:border-green-100
-  focus:ring-blue-500 focus:ring-1
+  focus:ring-yellow-400 focus:ring-1
   rounded-sm py-1 px-2;
 }
 
 .input-group label {
   font-family: "Roboto Condensed", sans-serif;
-  @apply uppercase text-[0.6rem] font-medium;
+  @apply uppercase text-[0.7rem] font-medium;
 }

@@ -9,5 +9,10 @@ img {
 }
 
 h1 {
+  font-family: "Roboto Condensed", sans-serif;
   @apply text-3xl;
+}
+
+h1 span {
+  @apply bg-linear-30 from-green-300 to-yellow-400 bg-clip-text text-transparent;
 }
