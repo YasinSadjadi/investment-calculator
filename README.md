@@ -103,7 +103,3 @@ ng lint
 
 - If `ng` is not recognized, use `npx ng ...` or install Angular CLI globally.
 - Check Node/npm versions if install fails.
-
-## License
-
-Add a license file if needed (e.g., MIT).
